@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title data-i18n="metaTitleInfo">Wist je dat?</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="pagina1-page">
+  <section class="video-section">
+    <button
+      id="videoCubeTrigger"
+      class="video-cube"
+      type="button"
+      aria-label="Open video in volledig scherm"
+      title="Bekijk de video"
+      data-i18n-aria-label="videoOpen"
+      data-i18n-title="videoOpen"
+    >
+      <img src="https://img.youtube.com/vi/Y0fItGyUNPs/maxresdefault.jpg" alt="Thumbnail van de video" class="video-cube__thumbnail" data-i18n-alt="videoThumbAlt">
+      <span class="video-cube__play">▶</span>
+    </button>
+    <h1 class="video-section__title" data-i18n="pageWorkAtPcpo">Werken bij PCPO</h1>
+  </section>
+
+  <div id="videoModal" class="video-modal" aria-hidden="true">
+    <button id="videoModalClose" class="video-modal__close" type="button" aria-label="Sluit video" data-i18n-aria-label="videoClose">✕</button>
+    <iframe
+      id="videoModalFrame"
+      class="video-modal__frame"
+      src=""
+      title="PCPO video"
+      allow="autoplay; encrypted-media; picture-in-picture; fullscreen"
+      allowfullscreen
+      referrerpolicy="strict-origin-when-cross-origin"
+      data-i18n-title="videoFrameTitle"
+    ></iframe>
+  </div>
+
+  <img class="pagina1-car" src="images/lange.auto" alt="" aria-hidden="true">
+  <button id="menuToggle">➤</button>
+
+  <nav id="sideMenu">
+    <a href="pagina1.html" data-i18n="navSchoolInfo">Schoolinformatie</a>
+    <a href="pagina2.html" data-i18n="navSchoolFit">Welke school past bij jouw kind?</a>
+    <a href="pagina3.html" data-i18n="navSchools">Onze scholen</a>
+    <a href="pagina4.html" data-i18n="navContact">Contact</a>
+    <a href="index.html" style="padding: 40px; display:block;" data-i18n="navHome">Home</a>
+  </nav>
+
+  <script src="app.js"></script>
+</body>
+</html>
